@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create tovar</title>
+</head>
+<body>
+<form action="#" th:action="@{/tovar-create}" th:object="${tovar}" method="post">
+    <label for="nameTovar">Name tovar</label>
+    <input type="text" th:field="*{nameTovar}" id="nameTovar" placeholder="Name Tovar">
+    <label for="nameProdavec">Name prodavec</label>
+    <input type="text" th:field="*{nameProdavec}" id="nameProdavec" placeholder="Name Prodavec">
+    <input type="submit" value="Create tovar">
+</form>
+</body>
+</html>
